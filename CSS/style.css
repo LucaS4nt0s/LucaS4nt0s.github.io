@@ -131,6 +131,18 @@ body{
     transition: 0.4s;
 }
 
+.linkparajogo{
+    
+    display: flex;
+    flex: none;
+    background-color: #cf47f1;
+    color: var(--dark-color);
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+
+}
+
 @media (max-width: 999px){
 
     body{

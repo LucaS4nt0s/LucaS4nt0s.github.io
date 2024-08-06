@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(86, 29, 132);
+}
+
+.titulo1 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 46px;
+  color: rgb(253, 253, 90);
+  font-family: "Serif";
+  font-size: 75px;
+  text-align: center;
+}
+
+.titulo2 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: rgb(253, 253, 90);
+  font-family: "Serif";
+  text-align: center;
+}
+
+form {
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(253, 253, 90);
+  width: 400px;
+  height: 750px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+}
+
+#interno_f {
+  position: absolute;
+  top: 13%;
+  width: 370px;
+}
+
+.Regras {
+  transform: translate(-50%, -50%);
+  background-color: rgb(253, 253, 90);
+  width: 400px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+  font-family: "arial";
+}
+
+#q_jogadores {
+  padding: 0px;
+  position: absolute;
+  top: 75%;
+  left: 14%;
+  width: 10%;
+  height: 20%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#titulo_jogadores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 10%;
+  font-size: 20px;
+}
+
+#quantidade_j {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #711fb4;
+  position: relative;
+  top: 25%;
+}
+
+#regras {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+.labels_j {
+  font-size: 20px;
+}
+
+.sub_titulo {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  color: #000000;
+  font-family: "Serif";
+  font-weight: 800;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  outline: none;
+}
+
+/* Cor de fundo do input, da letra, definindo sem bordas e o ponteiro do mouse a "mãozinha"*/
+input[type="submit"] {
+  background-color: #711fb4;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Cor de fundo do input quando passar o mouse em cima */
+input[type="submit"]:hover {
+  background-color: #000000;
+}
+
+/* Tirar a borda do input quando tiver ativado/clicado */
+input[type="submit"]:active {
+  border: none;
+}
+
+/* Cor de fundo do input */
+input[type="text"] {
+  background-color: rgb(253, 253, 90);
+}
+
+/* Cor de fundo do autocomplete */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px rgb(253, 253, 90) inset;
+}
+
+/* Cor do texto do autocomplete */
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgb(3, 3, 3) !important;
+}
+
+.botao_mm {
+  display: inline-block;
+  border: 2px solid #333;
+  border-radius: 10px; /* Borda arredondada */
+  padding: 10px 20px;
+  background: rgb(110, 37, 170);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 5px 0 rgb(73, 26, 111); /* Sombra 3D */
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.botao_mm:active {
+  transform: translateY(3px); /* Efeito de clique */
+  box-shadow: 0 2px 0 rgb(73, 26, 111); /* Sombra de clique */
+}
+
+#mais {
+  position: absolute;
+  top: 55%;
+  left: 70%;
+  width: 20%;
+  height: 20%;
+}
+
+#menos {
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  width: 20%;
+  height: 20%;
+}
+
+#entrar_jogo {
+  width: 80%;
+  height: 8%;
+  position: absolute;
+  top: 84%;
+  left: 10%;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#entrar_jogo:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#mensagem_insercao_jogadores {
+  position: absolute;
+  top: 45%;
+  left: 3%;
+  font-size: 30px;
+  color: red;
+  font-family: "Serif";
+  font-weight: bold; 
+  text-align: center;
+}
+
+#seta {
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  width: 6%;
+  height: 6%;
+  animation: moveArrow 1s linear infinite;
+}
+
+@keyframes moveArrow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateX(30px);  /*Distância para baixo*/
+  }
+} 
+
+/* .movimentar-elemento {
+  position: relative;
+  animation: mover 2s ease-in-out 1 forwards;
+}
+
+@keyframes mover {
+  from {
+      transform: translate(0, 0);
+  }
+  to {
+      transform: translate(0, 30px);
+  }
+} */
