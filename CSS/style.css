@@ -173,6 +173,12 @@ img{
     height: 400px;
 }
 
+.git{
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
 .Titulo_body{
 
     font-family: "Matemasie", sans-serif;
@@ -184,8 +190,28 @@ img{
 
 }
 
+.textosobre{
+
+    color: var(--color-white);
+    padding: 14vw;
+    font-size: 23px;
+    text-align: justify;
+}
+
 .Container {
     color: var(--dark2-color);
+}
+
+.Iconescontato {
+
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20vh;
+    margin: 150px;
+
 }
 
 @media (max-width: 999px){
