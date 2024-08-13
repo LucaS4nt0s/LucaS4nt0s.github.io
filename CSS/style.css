@@ -188,7 +188,7 @@ body{
     .inicio{
 
         background-color: var(--dark-color);
-        color: #fff;
+        color: #ffffff;
         padding-left: 19vw;
         padding-right: 19vw;
     
@@ -204,7 +204,7 @@ body{
     }
     
     .contato{
-        background-color: var(--color-white);
+        background-color: var(--dark-color);
         color: #fff;
         padding-left: 19vw;
         padding-right: 19vw;
@@ -212,8 +212,8 @@ body{
     
     .inicio:hover{
     
-        background-color: #7a7a7a;
-        color: var(--second-color);
+        background-color: var(--color-white);
+        color: var(--dark-color);
         opacity: 1;
         padding-left: 19vw;
         padding-right: 19vw;
@@ -223,18 +223,19 @@ body{
     
     .sobre:hover{
     
-        color: var(--second-color);
+        background-color: var(--color-white);
+        color: var(--dark-color);
         opacity: 1;
         padding-left: 19vw;
         padding-right: 19vw;
-        background-color: var(--main-color);
+        transition: 0.4s;
     
     }
     
     .contato:hover{
     
-        background-color: var(--main-color);
-        color: var(--second-color);
+        background-color: var(--color-white);
+        color: var(--dark-color);
         opacity: 1;
         padding-left: 19vw;
         padding-right: 19vw;
@@ -248,7 +249,7 @@ body{
     }
     
     .logo:hover{
-        color: #fff;
+        color: #ffffff;
         opacity: 1;
         padding: 3vh;
         transition: 0.4s;
