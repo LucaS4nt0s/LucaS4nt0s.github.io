@@ -77,7 +77,7 @@ const Rodar_operacao_2 = (resposta_1, dado_3) => {
 	var random = Operacao_aleatoria();
 
 	if (random == 4) {
-		if (resposta_1 % dado_3 != 0) {
+		if (resposta_1 % dado_3 != 0) { 
 			while (random == 4) {
 				random = Operacao_aleatoria();
 			}
@@ -186,33 +186,50 @@ const calcular = (dado1, dado2, dado3, operacao1, operacao2) => {
 	var operacao_1 = operacao1;
 	var operacao_2 = operacao2;
 	var resultado_1_conta = 0;
-	var reposta_correta = 0;
+	var resposta_correta = 0;
 
-	if (operacao_1 == 1) {
-		resultado_1_conta = dado_1 + dado_2;
+	
+	if( operacao_1 < 3 && operacao_2 > 2){
+		if (operacao_2 == 3){
+			resultado_1_conta = dado_2 * dado_3;
+		}else{
+			resultado_1_conta = dado_2 / dado_3;
+		}
+		if(operacao_1 == 2){
+			resposta_correta = dado_1 - resultado_1_conta;
+		}else{
+			resposta_correta = resultado_1_conta + dado_1;
+		}
 	}
-	else if (operacao_1 == 2) {
-		resultado_1_conta = dado_1 - dado_2;
+	else if( operacao_1 > 2){
+		if(operacao_1 == 3){
+			resultado_1_conta = dado_1 * dado_2;
+		}else{
+			resultado_1_conta = dado_1 / dado_2;
+		}
+		if(operacao_2 == 1){
+			resposta_correta = resultado_1_conta + dado_3;
+		}else if(operacao_2 == 2){
+			resposta_correta = resultado_1_conta - dado_3;
+		}else if(operacao_2 == 3){
+			resposta_correta = resultado_1_conta * dado_3;
+		}else{
+			resposta_correta = resultado_1_conta / dado_3;
+		}
 	}
-	else if (operacao_1 == 3) {
-		resultado_1_conta = dado_1 * dado_2;
-	}
-	else if (operacao_1 == 4) {
-		resultado_1_conta = dado_1 / dado_2;
-	}
-
-	if (operacao_2 == 1) {
-		reposta_correta = resultado_1_conta + dado_3;
-	}
-	else if (operacao_2 == 2) {
-		reposta_correta = resultado_1_conta - dado_3;
-	}
-	else if (operacao_2 == 3) {
-		reposta_correta = resultado_1_conta * dado_3;
-	}
-	else if (operacao_2 == 4) {
-		reposta_correta = resultado_1_conta / dado_3;
-	}
+	else if( operacao_1 < 3 && operacao_2 < 3){
+		if(operacao_1 == 1){
+			resultado_1_conta = dado_1 + dado_2;
+		}else{
+			resultado_1_conta = dado_1 - dado_2;
+		}
+		if(operacao_2 == 1){
+			resposta_correta = resultado_1_conta + dado_3;
+		}else{
+			resposta_correta = resultado_1_conta - dado_3;
+		}
+	}	
+	
 
 	// console.log("Valor dado 1:", dado_1);
 	// console.log("Operação [1 = soma , 2 = subtração, 3 = multiplicação, 4 = divisão];", operacao_1);
@@ -220,9 +237,9 @@ const calcular = (dado1, dado2, dado3, operacao1, operacao2) => {
 	// console.log("Resultado de dado 1 com dado 2: ", resultado_1_conta);
 	// console.log("Operação [1 = soma , 2 = subtração, 3 = multiplicação, 4 = divisão];", operacao_2);
 	// console.log("Valor dado 3:", dado_3);
-	console.log("Resultado de dados 1,2 com dado 3: ", reposta_correta);
+	console.log("Resultado de dados 1,2 com dado 3: ", resposta_correta);
 
-	return reposta_correta;
+	return resposta_correta;
 }
 
 //função para iniciar o jogo e chamar as funções Rodar_dado_1, Rodar_dado_2, Rodar_dado_3, 
