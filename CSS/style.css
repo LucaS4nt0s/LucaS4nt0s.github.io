@@ -6,6 +6,25 @@
     --gray-color: #474747;
     --dark2-color: #2b2929;
 }
+
+
+.matemasie-regular {
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+
+.honk-tituloasmd {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 25,
+      "SHLN" 50;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -134,17 +153,39 @@ body{
 
 .linkparajogo{
     
-    background-color: #f14747;
-    color: var(--dark-color);
-    padding: 10%;
+    padding: 3vw;
     font-size: 5vh;
     text-decoration: none;
+    text-align: center;
 
+}
+
+.Dados{
+
+    color: var(--color-white);
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+img{
+    height: 400px;
+}
+
+.Titulo_body{
+
+    font-family: "Matemasie", sans-serif;
+    color: var(--second-color);
+    padding: 2vw;
+    font-size: 7vh;
+    text-decoration: none;
+    text-align: center;
 
 }
 
 .Container {
-    background-color: #cf47f1;
+    color: var(--dark2-color);
 }
 
 @media (max-width: 999px){
@@ -184,8 +225,8 @@ body{
 
         background-color: var(--dark-color);
         color: #fff;
-        padding-left: 19vw;
-        padding-right: 19vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
     
     }
     
@@ -193,16 +234,16 @@ body{
     
         background-color: var(--dark-color);
         color: #fff;
-        padding-left: 19vw;
-        padding-right: 19vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
         
     }
     
     .contato{
         background-color: var(--dark-color);
         color: #fff;
-        padding-left: 19vw;
-        padding-right: 19vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
     
     .inicio:hover{
@@ -210,8 +251,8 @@ body{
         background-color: var(--color-white);
         color: var(--dark2-color);
         opacity: 1;
-        padding-left: 19vw;
-        padding-right: 19vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
         transition: 0.4s;
     
     }
@@ -221,8 +262,8 @@ body{
         background-color: var(--color-white);
         color: var(--dark2-color);
         opacity: 1;
-        padding-left: 19vw;
-        padding-right: 19vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
         transition: 0.4s;
 
     }
@@ -232,8 +273,8 @@ body{
         background-color: var(--color-white);
         color: var(--dark2-color);
         opacity: 1;
-        padding-left: 19vw;
-        padding-right: 19vw;
+        padding-left: 7vw;
+        padding-right: 8vw;
         transition: 0.4s;
     
     }
