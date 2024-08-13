@@ -1029,11 +1029,7 @@ const escolha_quantidade_jogadores = (q_jogadores) => {
 //função que realiza a movimentação das tampinhas de acordo com a quantidade de jogadores
 const movimentacao_tampinhas = () => {
 
-	const tampinha1 = document.querySelector("#tampinha_1")
-	const tampinha2 = document.querySelector("#tampinha_2")
-	const tampinha3 = document.querySelector("#tampinha_3")
-	const tampinha4 = document.querySelector("#tampinha_4")
-	const tampinha5 = document.querySelector("#tampinha_5")
+	//verde, vermelho, azul, laranja e roxo
 
 	const quantidade_jogadores = parseInt(document.getElementById("quantidade_j").innerHTML)
 
@@ -1046,117 +1042,102 @@ const movimentacao_tampinhas = () => {
 				tampinha1.style.marginLeft = "12%";
 			}
 			else if (jogador_1 == 1) {
-				tampinha1.style.marginTop = "-4%";
-				tampinha1.style.marginLeft = "12%";
+				document.getElementById('1').style.backgroundColor = "green";
 			}
 			else if (jogador_1 == 2) {
-				tampinha1.style.marginTop = "-8.2%";
-				tampinha1.style.marginLeft = "12%";
+				document.getElementById('12').style.backgroundColor = "green";
 			}
 			else if (jogador_1 == 3) {
-				tampinha1.style.marginTop = "-12.2%";
-				tampinha1.style.marginLeft = "12%";
+				document.getElementById('13').style.backgroundColor = "green";
 			}
 			else if (jogador_1 == 4) {
-				tampinha1.style.marginTop = "-16.2%";
-				tampinha1.style.marginLeft = "12%";
+				document.getElementById('14').style.backgroundColor = "green";
 			}
 			else if (jogador_1 == 5) {
-				tampinha1.style.marginTop = "-20.2%";
-				tampinha1.style.marginLeft = "12%";
+				document.getElementById('15').style.backgroundColor = "green";
 			}
 			else if (jogador_1 == 6) {
-				tampinha1.style.marginTop = "-24.2%";
-				tampinha1.style.marginLeft = "12%";
+				document.getElementById('16').style.backgroundColor = "green";
 			}
 			else if (jogador_1 == 7) {
-				tampinha1.style.marginTop = "-28.2%";
-				tampinha1.style.marginLeft = "12%";
+				document.getElementById('17').style.backgroundColor = "green";
 			}
 			else if (jogador_1 == 8) {
-				tampinha1.style.marginTop = "-32.2%";
-				tampinha1.style.marginLeft = "12%";
+				document.getElementById('18').style.backgroundColor = "green";
 			}
 			else if (jogador_1 == 9) {
-				tampinha1.style.marginTop = "-36.2%";
-				tampinha1.style.marginLeft = "12%";
+				document.getElementById('19').style.backgroundColor = "green";
 			}
 			else if (jogador_1 == 10) {
-				tampinha1.style.marginTop = "-40.2%";
-				tampinha1.style.marginLeft = "12%";
+				document.getElementById('10').style.backgroundColor = "green";
 			}
 
 			break;
 
-		case 2:
+		case 2: 
 			if (jogador_1 == 0) {
 				tampinha1.style.marginTop = "0%";
 				tampinha1.style.marginLeft = "4.5%";
-			} else if (jogador_1 == 1) {
-				tampinha1.style.marginTop = "-4%";
-				tampinha1.style.marginLeft = "4.5%";
-			} else if (jogador_1 == 2) {
-				tampinha1.style.marginTop = "-8.2%";
-				tampinha1.style.marginLeft = "4.5%";
-			} else if (jogador_1 == 3) {
-				tampinha1.style.marginTop = "-12.2%";
-				tampinha1.style.marginLeft = "4.5%";
-			} else if (jogador_1 == 4) {
-				tampinha1.style.marginTop = "-16.2%";
-				tampinha1.style.marginLeft = "4.5%";
-			} else if (jogador_1 == 5) {
-				tampinha1.style.marginTop = "-20.2%";
-				tampinha1.style.marginLeft = "4.5%";
-			} else if (jogador_1 == 6) {
-				tampinha1.style.marginTop = "-24.2%";
-				tampinha1.style.marginLeft = "4.5%";
-			} else if (jogador_1 == 7) {
-				tampinha1.style.marginTop = "-28.2%";
-				tampinha1.style.marginLeft = "4.5%";
-			} else if (jogador_1 == 8) {
-				tampinha1.style.marginTop = "-32.2%";
-				tampinha1.style.marginLeft = "4.5%";
-			} else if (jogador_1 == 9) {
-				tampinha1.style.marginTop = "-36.2%";
-				tampinha1.style.marginLeft = "4.5%";
-			} else if (jogador_1 == 10) {
-				tampinha1.style.marginTop = "-40.2%";
-				tampinha1.style.marginLeft = "4.5%";
+			}else if (jogador_1 == 1) {
+				document.getElementById('21').style.backgroundColor = "green";
+			}
+			else if (jogador_1 == 2) {
+				document.getElementById('22').style.backgroundColor = "green";
+			}
+			else if (jogador_1 == 3) {
+				document.getElementById('23').style.backgroundColor = "green";
+			}
+			else if (jogador_1 == 4) {
+				document.getElementById('24').style.backgroundColor = "green";
+			}
+			else if (jogador_1 == 5) {
+				document.getElementById('25').style.backgroundColor = "green";
+			}
+			else if (jogador_1 == 6) {
+				document.getElementById('26').style.backgroundColor = "green";
+			}
+			else if (jogador_1 == 7) {
+				document.getElementById('27').style.backgroundColor = "green";
+			}
+			else if (jogador_1 == 8) {
+				document.getElementById('28').style.backgroundColor = "green";
+			}
+			else if (jogador_1 == 9) {
+				document.getElementById('29').style.backgroundColor = "green";
+			}
+			else if (jogador_1 == 10) {
+				document.getElementById('20').style.backgroundColor = "green";
 			}
 
-			if (jogador_2 == 0) {
-				tampinha2.style.marginTop = "0%";
-				tampinha2.style.marginLeft = "14%";
-			} else if (jogador_2 == 1) {
-				tampinha2.style.marginTop = "-4%";
-				tampinha2.style.marginLeft = "14%";
-			} else if (jogador_2 == 2) {
-				tampinha2.style.marginTop = "-8.2%";
-				tampinha2.style.marginLeft = "14%";
-			} else if (jogador_2 == 3) {
-				tampinha2.style.marginTop = "-12.2%";
-				tampinha2.style.marginLeft = "14%";
-			} else if (jogador_2 == 4) {
-				tampinha2.style.marginTop = "-16.2%";
-				tampinha2.style.marginLeft = "14%";
-			} else if (jogador_2 == 5) {
-				tampinha2.style.marginTop = "-20.2%";
-				tampinha2.style.marginLeft = "14%";
-			} else if (jogador_2 == 6) {
-				tampinha2.style.marginTop = "-24.2%";
-				tampinha2.style.marginLeft = "14%";
-			} else if (jogador_2 == 7) {
-				tampinha2.style.marginTop = "-28.2%";
-				tampinha2.style.marginLeft = "14%";
-			} else if (jogador_2 == 8) {
-				tampinha2.style.marginTop = "-32.2%";
-				tampinha2.style.marginLeft = "14%";
-			} else if (jogador_2 == 9) {
-				tampinha2.style.marginTop = "-36.2%";
-				tampinha2.style.marginLeft = "14%";
-			} else if (jogador_2 == 10) {
-				tampinha2.style.marginTop = "-40.2%";
-				tampinha2.style.marginLeft = "14%";
+			if (jogador_2 == 1) { //não esta funcionando essa parte
+				document.getElementById('3').style.backgroundColor = "red";
+			}
+			else if (jogador_2 == 2) {
+				document.getElementById('32').style.backgroundColor = "red";
+			}
+			else if (jogador_2 == 3) {
+				document.getElementById('13').style.backgroundColor = "red";
+			}
+			else if (jogador_2 == 4) {
+				document.getElementById('14').style.backgroundColor = "red";
+			}
+			else if (jogador_2 == 5) {
+				document.getElementById('15').style.backgroundColor = "red";
+			}
+			else if (jogador_2 == 6) {
+				document.getElementById('16').style.backgroundColor = "red";
+			}
+			else if (jogador_2 == 7) {
+				document.getElementById('17').style.backgroundColor = "red";
+			}
+			else if (jogador_2 == 8) {
+				document.getElementById('18').style.backgroundColor = "red";
+			}
+			else if (jogador_2 == 9) {
+				document.getElementById('19').style.backgroundColor = "red";
+			}
+			else if (jogador_2 == 10) {
+				document.getElementById('10').style.backgroundColor ="red";
 			}
 
 			break;
