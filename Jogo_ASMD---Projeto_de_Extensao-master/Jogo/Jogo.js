@@ -1110,10 +1110,10 @@ const movimentacao_tampinhas = () => {
 			}
 
 			if (jogador_2 == 1) { //não esta funcionando essa parte
-				document.getElementById('3').style.backgroundColor = "red";
+				document.getElementById('1').style.backgroundColor = "red";
 			}
 			else if (jogador_2 == 2) {
-				document.getElementById('32').style.backgroundColor = "red";
+				document.getElementById('12').style.backgroundColor = "red";
 			}
 			else if (jogador_2 == 3) {
 				document.getElementById('13').style.backgroundColor = "red";
