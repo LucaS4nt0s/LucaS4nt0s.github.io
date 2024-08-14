@@ -1,0 +1,350 @@
+:root{
+    --color-white: #fff;
+    --main-color: #e6ce72;
+    --second-color: #cf47f1;
+    --dark-color: #3d3e3f;
+    --gray-color: #474747;
+    --dark2-color: #2b2929;
+}
+
+
+.matemasie-regular {
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+
+.honk-tituloasmd {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 25,
+      "SHLN" 50;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--dark-color);
+    height: 8vh;
+    padding: 0 7%;
+    box-shadow: 0 2px 10px var(--dark2-color);
+}
+
+body{
+    background-color: var(--gray-color);
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list li{
+    letter-spacing: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.4s;
+}
+
+.inicio{
+
+    background-color: var(--dark-color);
+    color: #fff;
+    padding: 3vh;
+
+}
+
+.sobre{
+
+    background-color: var(--dark-color);
+    color: #fff;
+    padding: 3vh;
+    
+}
+
+.contato{
+    background-color: var(--dark-color);
+    color: #fff;
+    padding: 3vh;
+}
+
+.inicio:hover{
+
+    background-color: var(--color-white);
+    color: var(--dark2-color);
+    opacity: 1;
+    padding: 3vh;
+    transition: 0.4s;
+
+}
+
+.sobre:hover{
+
+    background-color: var(--color-white);
+    color: var(--dark2-color);
+    opacity: 1;
+    padding: 3vh;
+    transition: 0.4s;
+
+}
+
+.contato:hover{
+
+    background-color: var(--color-white);
+    color: var(--dark2-color);
+    opacity: 1;
+    padding: 3vh;
+    transition: 0.4s;
+
+}
+
+.logo{
+    padding: 3vh;
+    color: var(--second-color);
+}
+
+.logo:hover{
+    color: #fff;
+    opacity: 1;
+    padding: 3vh;
+    transition: 0.4s;
+}
+
+.linkparajogo{
+    
+    padding: 3vw;
+    font-size: 5vh;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.Dados{
+
+    color: var(--color-white);
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+img{
+    height: 400px;
+}
+
+.git{
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Titulo_body{
+
+    font-family: "Matemasie", sans-serif;
+    color: var(--second-color);
+    padding: 2vw;
+    font-size: 7vh;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.textosobre{
+
+    color: var(--color-white);
+    padding: 14vw;
+    font-size: 23px;
+    text-align: justify;
+}
+
+.Container {
+    color: var(--dark2-color);
+}
+
+.Iconescontato {
+
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20vh;
+    margin: 150px;
+
+}
+
+@media (max-width: 999px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: var(--dark-color);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;  
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+
+    .nav-list li{
+        opacity: 0;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .nav-list.active{
+        transform: translateX(0);
+        transition: 0.5s;
+    }
+
+    .inicio{
+
+        background-color: var(--dark-color);
+        color: #fff;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    
+    }
+    
+    .sobre{
+    
+        background-color: var(--dark-color);
+        color: #fff;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        
+    }
+    
+    .contato{
+        background-color: var(--dark-color);
+        color: #fff;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    
+    .inicio:hover{
+    
+        background-color: var(--color-white);
+        color: var(--dark2-color);
+        opacity: 1;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        transition: 0.4s;
+    
+    }
+    
+    .sobre:hover{
+    
+        background-color: var(--color-white);
+        color: var(--dark2-color);
+        opacity: 1;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        transition: 0.4s;
+
+    }
+    
+    .contato:hover{
+    
+        background-color: var(--color-white);
+        color: var(--dark2-color);
+        opacity: 1;
+        padding-left: 7vw;
+        padding-right: 8vw;
+        transition: 0.4s;
+    
+    }
+    
+    .logo{
+        padding: 3vh;
+        color: var(--second-color);
+    }
+    
+    .logo:hover{
+        color: #fff;
+        opacity: 1;
+        padding: 3vh;
+        transition: 0.4s;
+    }
+
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+
+.mobile-menu.active .line1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2{
+    opacity: 0;
+}
+
+.mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.nav-list:hover{
+    background-color: var(--dark-color);
+}
+
+
