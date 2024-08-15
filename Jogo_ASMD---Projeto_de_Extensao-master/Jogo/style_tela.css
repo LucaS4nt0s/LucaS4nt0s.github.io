@@ -212,8 +212,8 @@ input:-webkit-autofill {
 }
 
 #entrar_jogo:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 #mensagem_insercao_jogadores {
@@ -223,7 +223,7 @@ input:-webkit-autofill {
   font-size: 30px;
   color: red;
   font-family: "Serif";
-  font-weight: bold; 
+  font-weight: bold;
   text-align: center;
 }
 
@@ -242,9 +242,9 @@ input:-webkit-autofill {
     transform: translateY(0);
   }
   50% {
-    transform: translateX(30px);  /*Distância para baixo*/
+    transform: translateX(30px); /*Distância para baixo*/
   }
-} 
+}
 
 /* .movimentar-elemento {
   position: relative;
