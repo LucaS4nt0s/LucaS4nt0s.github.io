@@ -920,13 +920,14 @@ const verificador_contador_jogadores = () => {
 		if (contador > 0) {
 			contador = contador - 1
 			document.getElementById("quantidade_j").innerHTML = contador
-			btn_Iniciar.removeAttribute("disabled")
+			//btn_Iniciar.removeAttribute("disabled") -> tava dando erro 
 		}
 
 		if (contador == 0) {
 			const sub_titulo = document.querySelector(".sub_titulo")
 			sub_titulo.style.top = "20%"
 			sub_titulo.innerHTML = "BEM VINDO AO GAME"
+			btn_Iniciar.disabled = true
 		}
 
 		mostrar_insercao_jogadores_inicio()
