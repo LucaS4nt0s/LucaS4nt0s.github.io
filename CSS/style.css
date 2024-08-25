@@ -162,12 +162,12 @@ body{
 }
 
 .linkparaexe{
-    
     padding: 0;
     font-size: 1.5vh;
     text-decoration: none;
     text-align: center;
     margin-bottom: 20px;
+    color: var(--second-color)
 }
 
 
