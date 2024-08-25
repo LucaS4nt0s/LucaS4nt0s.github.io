@@ -153,12 +153,23 @@ body{
 
 .linkparajogo{
     
-    padding: 3vw;
-    font-size: 5vh;
+    padding: 0;
+    font-size: 1.5vh;
     text-decoration: none;
     text-align: center;
+    margin-bottom: 20px;
 
 }
+
+.linkparaexe{
+    
+    padding: 0;
+    font-size: 1.5vh;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 
 .Dados{
 
