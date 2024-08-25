@@ -3,6 +3,7 @@
 O jogo ASMD foi uma criação a partir de um projeto de extensão na faculdade onde foi desenvolvido um jogo digital e matemático para crianças do 5º e 6º ano.
 
 ## :camera_flash: Screenshots
+
 <!-- You can add more screenshots here if you like -->
 <div align="center">
   <img src="Jogo/results/tela_incial.png" width="1000">&emsp;
@@ -11,20 +12,24 @@ O jogo ASMD foi uma criação a partir de um projeto de extensão na faculdade o
 </div>
 
 ## Tecnologias Utilizadas
-* HTML
-* CSS
-* JavaScript
+
+- HTML
+- CSS
+- JavaScript
 
 ### TODO
+
 - Implementação de dados 3D;
 - Placar interativo;
 
 ## Authors
+
 Matheus Vinicius Ferreira e Silva (follow me on [Linkedin](https://www.linkedin.com/in/matheus-vinicius-ferreira-e-silva-518b061b0))<br>
 Carlos Felipe Barbosa<br>
 Luca Samuel dos Santos
 
 ## License
+
 ```
 The MIT License (MIT)
 
