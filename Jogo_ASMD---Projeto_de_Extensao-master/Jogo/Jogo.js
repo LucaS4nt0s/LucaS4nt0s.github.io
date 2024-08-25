@@ -778,6 +778,7 @@ const verificarCampo = () => {
 	}
 }
 
+
 //função com escutador de evento para verificar a cada meio segundo se o campo de resposta está vazio ou não
 const verificar_constante = () => {
 	// adicona um ouvinte de evento para o evento de entrada no campo de texto
@@ -1750,7 +1751,7 @@ const verificar_campos_formulario = () => {
 verificar_campos_formulario();
 
 const colocacao_jogadores = () => {
-
+	
 }
 
 const verificar_ganhador = () => {
