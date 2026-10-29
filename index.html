@@ -1,56 +1,293 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Honk:MORF@25&family=Matemasie&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nabla&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="shortcut icon"
-      type="imagex/png"
-      href=".\Jogo_ASMD---Projeto_de_Extensao-master\Jogo\imagens_jogo\dado.png"
-    />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luca Samuel dos Santos | Engenharia de Computação & Full Stack</title>
+  <meta name="description" content="Portfólio de Luca Samuel dos Santos — Engenharia de Computação (IFSULDEMINAS), Desenvolvedor Backend, Full Stack e IoT.">
+  <link rel="icon" href="https://github.com/LucaS4nt0s.png" type="image/png">
+  <style>
+    :root {
+      --bg: #0b0f17;
+      --surface: #131b2e;
+      --surface-hover: #1a2540;
+      --border: #233152;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-2: #818cf8;
+      --tag-bg: rgba(56, 189, 248, 0.12);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    body { max-width: 1024px; margin: 0 auto; padding: 0 1.25rem; }
+    a { color: var(--accent); text-decoration: none; transition: opacity 0.15s; }
+    a:hover { opacity: 0.85; }
 
-  <body>
-    <header>
-      <nav>
-        <a class="logo" href="index.html">ASMD</a>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <ul class="nav-list">
-          <li><a href="index.html" class="inicio">Início</a></li>
-          <li><a href="sobre.html" class="sobre">Sobre</a></li>
-          <li><a href="contato.html" class="contato">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="Container">
+    /* Nav */
+    header { position: sticky; top: 0; z-index: 10; background: rgba(11, 15, 23, 0.88); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding: 1rem 0; margin-bottom: 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .brand { font-weight: 700; font-size: 1.1rem; color: var(--text); letter-spacing: -0.02em; }
+    .brand span { color: var(--accent); }
+    nav { display: flex; gap: 1.25rem; font-size: 0.92rem; }
+    nav a { color: var(--muted); font-weight: 500; }
+    nav a:hover { color: var(--accent); }
 
+    /* Hero */
+    .hero { display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center; padding: 1.5rem 0 3rem; border-bottom: 1px solid var(--border); }
+    .hero h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.15; margin-bottom: 0.75rem; letter-spacing: -0.02em; }
+    .hero h1 span { background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p { color: var(--muted); font-size: 1.05rem; max-width: 65ch; margin-bottom: 1.25rem; }
+    .avatar { width: 136px; height: 136px; border-radius: 50%; border: 3px solid var(--accent); object-fit: cover; box-shadow: 0 0 28px rgba(56, 189, 248, 0.2); }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .btn { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.55rem 1.1rem; border-radius: 0.5rem; font-weight: 600; font-size: 0.9rem; border: 1px solid var(--border); background: var(--surface); color: var(--text); }
+    .btn.primary { background: var(--accent); color: #090d16; border-color: var(--accent); }
+    .btn:hover { transform: translateY(-1px); }
 
-        <div class="Titulo_body">
-            <h1>ASMD</h1>
-        </div>
-        <div class="Dados">
-            <img src=".\Images\dadobody.png" alt="Dados" title="Imagens dos dados">
-        </div>
-        <div class="linkparajogo">
-            <a href=".\Jogo_ASMD---Projeto_de_Extensao-master\Jogo\index.html" class="linkJogo"> <h1>Jogo de tabuleiro online</h1> </a>
-        </div>
-        <div class="linkparaexe">
-            <a href="ASMD_ZTYPE.rar" download> <h1>Baixe ASMD ZTPYE EDITION aqui!</h1></a>
-        </div>
+    /* Sections */
+    section { padding: 2.75rem 0; border-bottom: 1px solid var(--border); }
+    h2 { font-size: 1.45rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem; letter-spacing: -0.01em; }
+    h2::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 2px; background: var(--accent); }
 
-    </div>
-    <main></main>
-    <script src="JS\mobile-navbar.js"></script>
-  </body>
+    /* Skills */
+    .skills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .tag { background: var(--tag-bg); color: var(--accent); border: 1px solid rgba(56, 189, 248, 0.25); padding: 0.3rem 0.75rem; border-radius: 999px; font-size: 0.82rem; font-weight: 600; }
+
+    /* Timeline / Experience */
+    .timeline { display: grid; gap: 1.25rem; }
+    .item { background: var(--surface); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; }
+    .item-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.4rem; }
+    .item h3 { font-size: 1.08rem; color: var(--text); }
+    .item .org { color: var(--accent); font-weight: 600; font-size: 0.92rem; }
+    .item .period { color: var(--muted); font-size: 0.82rem; }
+    .item p { color: var(--muted); font-size: 0.93rem; margin-top: 0.4rem; }
+
+    /* Grid Projects */
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.15rem; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between; transition: border-color 0.15s, background 0.15s; }
+    .card:hover { border-color: var(--accent); background: var(--surface-hover); }
+    .card h3 { font-size: 1.08rem; margin-bottom: 0.4rem; }
+    .card p { color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem; }
+    .card-footer { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; justify-content: space-between; margin-top: auto; }
+    .card-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+    .card-tags span { font-size: 0.75rem; color: var(--muted); background: rgba(148, 163, 184, 0.12); padding: 0.15rem 0.55rem; border-radius: 4px; }
+
+    footer { padding: 2.5rem 0; text-align: center; color: var(--muted); font-size: 0.88rem; }
+
+    @media (max-width: 640px) {
+      .hero { grid-template-columns: 1fr; text-align: left; }
+      .avatar { order: -1; width: 104px; height: 104px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#" class="brand">luca<span>.dev</span></a>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#projetos">Portfólio</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="sobre">
+      <div>
+        <h1>Olá, sou <span>Luca Samuel dos Santos</span></h1>
+        <p>
+          Estudante de <strong>Engenharia de Computação</strong> no IFSULDEMINAS (Campus Poços de Caldas) e desenvolvedor focado em construir soluções de ponta a ponta — desde sistemas embarcados e IoT até arquiteturas backend e aplicações web escaláveis.
+        </p>
+        <div class="btn-row">
+          <a class="btn primary" href="https://github.com/LucaS4nt0s" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/lucasamueldossantos/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="mailto:lucasamuel30@gmail.com">lucasamuel30@gmail.com</a>
+        </div>
+      </div>
+      <img class="avatar" src="https://github.com/LucaS4nt0s.png" alt="Foto de Luca Samuel dos Santos">
+    </section>
+
+    <section id="skills">
+      <h2>Tecnologias & Competências</h2>
+      <div class="skills">
+        <span class="tag">Python</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">Java</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Angular</span>
+        <span class="tag">Next.js / React Native</span>
+        <span class="tag">C / C++</span>
+        <span class="tag">ESP32 & IoT</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">SQLAlchemy</span>
+        <span class="tag">Docker & Compose</span>
+        <span class="tag">Grafana / Prometheus / Loki</span>
+        <span class="tag">AWS</span>
+        <span class="tag">Git & Linux</span>
+      </div>
+    </section>
+
+    <section id="experiencia">
+      <h2>Experiência & Formação</h2>
+      <div class="timeline">
+        <article class="item">
+          <div class="item-header">
+            <div>
+              <h3>Desenvolvedor Full Stack</h3>
+              <div class="org">EJ Turing (Empresa Júnior de Computação — IFSULDEMINAS)</div>
+            </div>
+            <span class="period">2025 – Presente</span>
+          </div>
+          <p>
+            Desenvolvimento de aplicações web e sistemas sob medida para clientes reais, desde o levantamento de requisitos e modelagem de banco de dados até a entrega e implantação.
+          </p>
+        </article>
+
+        <article class="item">
+          <div class="item-header">
+            <div>
+              <h3>Prototipagem, Sistemas Embarcados & Impressão 3D</h3>
+              <div class="org">Laboratório Maker — IFSULDEMINAS</div>
+            </div>
+            <span class="period">2024 – Presente</span>
+          </div>
+          <p>
+            Desenvolvimento de soluções com microcontroladores (ESP32, Arduino), confecção de placas de circuito impresso (PCB), integração de sensores/atuadores e modelagem/impressão 3D.
+          </p>
+        </article>
+
+        <article class="item">
+          <div class="item-header">
+            <div>
+              <h3>Bacharelado em Engenharia de Computação</h3>
+              <div class="org">Instituto Federal do Sul de Minas Gerais (IFSULDEMINAS) — Poços de Caldas</div>
+            </div>
+            <span class="period">Em andamento</span>
+          </div>
+          <p>
+            Foco em Arquitetura de Software, Sistemas Distribuídos, Redes de Computadores, Inteligência Artificial e Sistemas Embarcados.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <h2>Portfólio de Projetos</h2>
+      <div class="grid">
+        <article class="card">
+          <div>
+            <h3><a href="https://github.com/LucaS4nt0s/ABACO_Sistema" target="_blank" rel="noopener">SGA ABACO ↗</a></h3>
+            <p>Sistema de Gestão Acadêmica full-stack para controle integrado de turmas, alunos, matrículas, presenças, notas e logística de materiais, com 107 testes automatizados.</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>Angular 21</span><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <h3><a href="https://github.com/LucaS4nt0s/RentalSpouse" target="_blank" rel="noopener">RentalSpouse ↗</a></h3>
+            <p>Plataforma monorepo web e mobile para conexão ágil e segura entre clientes e prestadores de serviços de manutenção residencial.</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>FastAPI</span><span>Next.js</span><span>React Native</span><span>PostgreSQL</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <h3><a href="https://github.com/LucaS4nt0s/GameRent" target="_blank" rel="noopener">GameRent (Sistemas Distribuídos) ↗</a></h3>
+            <p>Plataforma distribuída em microsserviços para aluguel de jogos com busca geoespacial por proximidade, comunicação inter-serviços e deploy na AWS.</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>Python</span><span>Microsserviços</span><span>AWS</span><span>Docker</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <h3><a href="https://github.com/LucaS4nt0s/Varinha_Magica" target="_blank" rel="noopener">Varinha Mágica IoT ↗</a></h3>
+            <p>Hardware embarcado com ESP32 e acelerômetro/giroscópio MPU6050 capaz de traduzir movimentos da mão em tempo real para uma aplicação web interativa.</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>ESP32</span><span>MPU6050</span><span>Node.js</span><span>WebSockets</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <h3><a href="https://github.com/LucaS4nt0s/Estacionamento_Shopping" target="_blank" rel="noopener">Smart Parking Multithread ↗</a></h3>
+            <p>Simulador concorrente em tempo real para controle de vagas com semáforos contadores, filas prioritárias, prevenção de race conditions e GUI em Java Swing.</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>Java</span><span>Multithreading</span><span>Concorrência</span><span>Swing</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <h3><a href="https://github.com/LucaS4nt0s/Damas_IA" target="_blank" rel="noopener">Damas com IA (Minimax) ↗</a></h3>
+            <p>Jogo de Damas completo em Java utilizando árvore de busca Minimax e funções de avaliação heurística para previsão e tomada de decisão.</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>Java</span><span>Inteligência Artificial</span><span>Minimax</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <h3><a href="https://github.com/LucaS4nt0s/LandingPage_EJTuring" target="_blank" rel="noopener">Landing Page — EJ Turing ↗</a></h3>
+            <p>Página institucional moderna e responsiva para a Empresa Júnior do IFSULDEMINAS com apresentação de portfólio, serviços e formulário integrado.</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>Tailwind CSS</span><span>HTML5</span><span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <h3><a href="https://github.com/LucaS4nt0s/CalculadoraGPON" target="_blank" rel="noopener">Calculadora GPON ↗</a></h3>
+            <p>Ferramenta para dimensionamento e cálculo de orçamento de potência em redes ópticas passivas (GPON).</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>Java</span><span>Redes Ópticas</span><span>Telecom</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p style="color: var(--muted); margin-bottom: 1rem;">
+        Aberto a oportunidades de estágio e projetos em Engenharia de Software, Backend, Full Stack e IoT.
+      </p>
+      <div class="btn-row">
+        <a class="btn primary" href="mailto:lucasamuel30@gmail.com">Enviar E-mail</a>
+        <a class="btn" href="https://www.linkedin.com/in/lucasamueldossantos/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/LucaS4nt0s" target="_blank" rel="noopener">GitHub (@LucaS4nt0s)</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Luca Samuel dos Santos · Hospedado no GitHub Pages
+  </footer>
+
+</body>
 </html>
