@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luca Samuel dos Santos | Engenharia de Computação & Full Stack</title>
-  <meta name="description" content="Portfólio de Luca Samuel dos Santos — Engenharia de Computação (IFSULDEMINAS), Desenvolvedor Backend, Full Stack e IoT.">
+  <title>Luca Samuel dos Santos | GenAI, Machine Learning & Software Engineering</title>
+  <meta name="description" content="Portfólio de Luca Samuel dos Santos — Engenharia de Computação (IFSULDEMINAS). Inteligência Artificial Generativa (GenAI), Machine Learning, Otimização Logística, Python, FastAPI, Java e Sistemas Distribuídos.">
+  <meta name="keywords" content="GenAI, Inteligência Artificial Generativa, LLMs, Prompt Engineering, Machine Learning, Python, FastAPI, Scikit-Learn, Otimização de Rotas, Sistemas Distribuídos, Backend, Full Stack, iFood, Luca Samuel dos Santos">
   <link rel="icon" href="https://github.com/LucaS4nt0s.png" type="image/png">
   <style>
     :root {
@@ -15,78 +16,101 @@
       --text: #e2e8f0;
       --muted: #94a3b8;
       --accent: #38bdf8;
-      --accent-2: #818cf8;
+      --accent-2: #a855f7;
+      --accent-ai: #f43f5e;
       --tag-bg: rgba(56, 189, 248, 0.12);
+      --tag-ai-bg: rgba(244, 63, 94, 0.14);
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
-    body { max-width: 1024px; margin: 0 auto; padding: 0 1.25rem; }
+    body { max-width: 1080px; margin: 0 auto; padding: 0 1.25rem; }
     a { color: var(--accent); text-decoration: none; transition: opacity 0.15s; }
     a:hover { opacity: 0.85; }
 
     /* Nav */
-    header { position: sticky; top: 0; z-index: 10; background: rgba(11, 15, 23, 0.88); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding: 1rem 0; margin-bottom: 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
-    .brand { font-weight: 700; font-size: 1.1rem; color: var(--text); letter-spacing: -0.02em; }
+    header { position: sticky; top: 0; z-index: 20; background: rgba(11, 15, 23, 0.9); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding: 1rem 0; margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .brand { font-weight: 700; font-size: 1.15rem; color: var(--text); letter-spacing: -0.02em; }
     .brand span { color: var(--accent); }
-    nav { display: flex; gap: 1.25rem; font-size: 0.92rem; }
+    nav { display: flex; flex-wrap: wrap; gap: 1.15rem; font-size: 0.9rem; }
     nav a { color: var(--muted); font-weight: 500; }
     nav a:hover { color: var(--accent); }
 
     /* Hero */
-    .hero { display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center; padding: 1.5rem 0 3rem; border-bottom: 1px solid var(--border); }
-    .hero h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.15; margin-bottom: 0.75rem; letter-spacing: -0.02em; }
-    .hero h1 span { background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .hero p { color: var(--muted); font-size: 1.05rem; max-width: 65ch; margin-bottom: 1.25rem; }
-    .avatar { width: 136px; height: 136px; border-radius: 50%; border: 3px solid var(--accent); object-fit: cover; box-shadow: 0 0 28px rgba(56, 189, 248, 0.2); }
+    .hero { display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center; padding: 1.5rem 0 2.75rem; border-bottom: 1px solid var(--border); }
+    .badge-pill { display: inline-flex; align-items: center; gap: 0.45rem; background: var(--tag-ai-bg); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.35); padding: 0.28rem 0.8rem; border-radius: 999px; font-size: 0.8rem; font-weight: 600; margin-bottom: 0.9rem; }
+    .hero h1 { font-size: clamp(1.85rem, 4vw, 2.65rem); line-height: 1.15; margin-bottom: 0.85rem; letter-spacing: -0.02em; }
+    .hero h1 span { background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--accent-ai)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p { color: var(--muted); font-size: 1.02rem; max-width: 68ch; margin-bottom: 1.25rem; }
+    .avatar { width: 144px; height: 144px; border-radius: 50%; border: 3px solid var(--accent); object-fit: cover; box-shadow: 0 0 32px rgba(56, 189, 248, 0.22); }
     .btn-row { display: flex; flex-wrap: wrap; gap: 0.75rem; }
-    .btn { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.55rem 1.1rem; border-radius: 0.5rem; font-weight: 600; font-size: 0.9rem; border: 1px solid var(--border); background: var(--surface); color: var(--text); }
+    .btn { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.55rem 1.1rem; border-radius: 0.5rem; font-weight: 600; font-size: 0.9rem; border: 1px solid var(--border); background: var(--surface); color: var(--text); cursor: pointer; }
     .btn.primary { background: var(--accent); color: #090d16; border-color: var(--accent); }
     .btn:hover { transform: translateY(-1px); }
 
+    /* Highlights Strip */
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.75rem; }
+    .stat-box { background: var(--surface); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1rem 1.15rem; }
+    .stat-box strong { display: block; font-size: 1.1rem; color: var(--text); margin-bottom: 0.2rem; }
+    .stat-box span { font-size: 0.84rem; color: var(--muted); }
+
     /* Sections */
     section { padding: 2.75rem 0; border-bottom: 1px solid var(--border); }
-    h2 { font-size: 1.45rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem; letter-spacing: -0.01em; }
+    h2 { font-size: 1.45rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; letter-spacing: -0.01em; }
     h2::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 2px; background: var(--accent); }
+    .section-sub { color: var(--muted); font-size: 0.93rem; margin-bottom: 1.5rem; }
 
-    /* Skills */
-    .skills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-    .tag { background: var(--tag-bg); color: var(--accent); border: 1px solid rgba(56, 189, 248, 0.25); padding: 0.3rem 0.75rem; border-radius: 999px; font-size: 0.82rem; font-weight: 600; }
+    /* Skill Groups */
+    .skill-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1.15rem; }
+    .skill-card { background: var(--surface); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.2rem; }
+    .skill-card h3 { font-size: 0.98rem; margin-bottom: 0.8rem; color: var(--text); }
+    .skills { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+    .tag { background: var(--tag-bg); color: var(--accent); border: 1px solid rgba(56, 189, 248, 0.25); padding: 0.25rem 0.65rem; border-radius: 999px; font-size: 0.78rem; font-weight: 600; }
+    .tag.ai { background: var(--tag-ai-bg); color: #fb7185; border-color: rgba(244, 63, 94, 0.3); }
 
-    /* Timeline / Experience */
-    .timeline { display: grid; gap: 1.25rem; }
-    .item { background: var(--surface); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; }
-    .item-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.4rem; }
-    .item h3 { font-size: 1.08rem; color: var(--text); }
-    .item .org { color: var(--accent); font-weight: 600; font-size: 0.92rem; }
-    .item .period { color: var(--muted); font-size: 0.82rem; }
-    .item p { color: var(--muted); font-size: 0.93rem; margin-top: 0.4rem; }
+    /* Filter Bar */
+    .filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+    .filter-btn { background: var(--surface); color: var(--muted); border: 1px solid var(--border); padding: 0.4rem 0.9rem; border-radius: 999px; font-size: 0.84rem; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+    .filter-btn.active, .filter-btn:hover { background: var(--accent); color: #090d16; border-color: var(--accent); }
 
     /* Grid Projects */
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.15rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(315px, 1fr)); gap: 1.15rem; }
     .card { background: var(--surface); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between; transition: border-color 0.15s, background 0.15s; }
     .card:hover { border-color: var(--accent); background: var(--surface-hover); }
-    .card h3 { font-size: 1.08rem; margin-bottom: 0.4rem; }
-    .card p { color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem; }
+    .card.featured { border-color: rgba(244, 63, 94, 0.45); }
+    .card-badge { display: inline-block; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; padding: 0.15rem 0.55rem; border-radius: 4px; margin-bottom: 0.55rem; background: var(--tag-ai-bg); color: #fb7185; width: fit-content; }
+    .card-badge.eng { background: var(--tag-bg); color: var(--accent); }
+    .card h3 { font-size: 1.06rem; margin-bottom: 0.45rem; }
+    .card p { color: var(--muted); font-size: 0.89rem; margin-bottom: 1rem; }
     .card-footer { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; justify-content: space-between; margin-top: auto; }
     .card-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
-    .card-tags span { font-size: 0.75rem; color: var(--muted); background: rgba(148, 163, 184, 0.12); padding: 0.15rem 0.55rem; border-radius: 4px; }
+    .card-tags span { font-size: 0.74rem; color: var(--muted); background: rgba(148, 163, 184, 0.12); padding: 0.15rem 0.55rem; border-radius: 4px; }
+
+    /* Timeline / Experience */
+    .timeline { display: grid; gap: 1.15rem; }
+    .item { background: var(--surface); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; }
+    .item-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.4rem; }
+    .item h3 { font-size: 1.06rem; color: var(--text); }
+    .item .org { color: var(--accent); font-weight: 600; font-size: 0.9rem; }
+    .item .period { color: var(--muted); font-size: 0.82rem; }
+    .item p { color: var(--muted); font-size: 0.92rem; margin-top: 0.4rem; }
 
     footer { padding: 2.5rem 0; text-align: center; color: var(--muted); font-size: 0.88rem; }
 
     @media (max-width: 640px) {
-      .hero { grid-template-columns: 1fr; text-align: left; }
-      .avatar { order: -1; width: 104px; height: 104px; }
+      .hero { grid-template-columns: 1fr; }
+      .avatar { order: -1; width: 108px; height: 108px; }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <a href="#" class="brand">luca<span>.dev</span></a>
+    <a href="#" class="brand">luca<span>.ai</span></a>
     <nav>
       <a href="#sobre">Sobre</a>
-      <a href="#experiencia">Experiência</a>
+      <a href="#ia-genai">IA & GenAI</a>
       <a href="#projetos">Portfólio</a>
+      <a href="#experiencia">Experiência</a>
       <a href="#contato">Contato</a>
     </nav>
   </header>
@@ -94,36 +118,271 @@
   <main>
     <section class="hero" id="sobre">
       <div>
+        <div class="badge-pill">✨ GenAI · Machine Learning · Backend & Sistemas Distribuídos</div>
         <h1>Olá, sou <span>Luca Samuel dos Santos</span></h1>
         <p>
-          Estudante de <strong>Engenharia de Computação</strong> no IFSULDEMINAS (Campus Poços de Caldas) e desenvolvedor focado em construir soluções de ponta a ponta — desde sistemas embarcados e IoT até arquiteturas backend e aplicações web escaláveis.
+          Estudante de <strong>Engenharia de Computação</strong> no IFSULDEMINAS e desenvolvedor apaixonado por resolver problemas reais combinando <strong>Inteligência Artificial Generativa (LLMs, Agentes, Prompt Engineering)</strong>, <strong>Machine Learning</strong>, <strong>Otimização Logística</strong> e <strong>Engenharia de Software Escalável (Python, FastAPI, Java, Cloud & Microsserviços)</strong>.
         </p>
         <div class="btn-row">
-          <a class="btn primary" href="https://github.com/LucaS4nt0s" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn primary" href="#projetos">Ver Projetos de IA & Engenharia</a>
+          <a class="btn" href="https://github.com/LucaS4nt0s" target="_blank" rel="noopener">GitHub (@LucaS4nt0s)</a>
           <a class="btn" href="https://www.linkedin.com/in/lucasamueldossantos/" target="_blank" rel="noopener">LinkedIn</a>
           <a class="btn" href="mailto:lucasamuel30@gmail.com">lucasamuel30@gmail.com</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat-box">
+            <strong>GenAI & LLMs</strong>
+            <span>Integração de APIs multimodais (Gemini), Prompt Engineering, Agentes & Automação</span>
+          </div>
+          <div class="stat-box">
+            <strong>Machine Learning & Otimização</strong>
+            <span>Classificação supervisionada (Scikit-Learn), Roteamento (TSP) & Despacho de Entregas</span>
+          </div>
+          <div class="stat-box">
+            <strong>Arquitetura & Dados</strong>
+            <span>Microsserviços em Python/FastAPI, Java, PostgreSQL, MongoDB, Docker & AWS</span>
+          </div>
         </div>
       </div>
       <img class="avatar" src="https://github.com/LucaS4nt0s.png" alt="Foto de Luca Samuel dos Santos">
     </section>
 
-    <section id="skills">
-      <h2>Tecnologias & Competências</h2>
-      <div class="skills">
-        <span class="tag">Python</span>
-        <span class="tag">FastAPI</span>
-        <span class="tag">Java</span>
-        <span class="tag">TypeScript</span>
-        <span class="tag">Angular</span>
-        <span class="tag">Next.js / React Native</span>
-        <span class="tag">C / C++</span>
-        <span class="tag">ESP32 & IoT</span>
-        <span class="tag">PostgreSQL</span>
-        <span class="tag">SQLAlchemy</span>
-        <span class="tag">Docker & Compose</span>
-        <span class="tag">Grafana / Prometheus / Loki</span>
-        <span class="tag">AWS</span>
-        <span class="tag">Git & Linux</span>
+    <section id="ia-genai">
+      <h2>Competências Técnicas & Stack</h2>
+      <p class="section-sub">Conhecimentos aplicados em projetos acadêmicos, pesquisa aplicada e soluções em produção.</p>
+      <div class="skill-groups">
+        <div class="skill-card">
+          <h3>🤖 IA Generativa (GenAI) & Machine Learning</h3>
+          <div class="skills">
+            <span class="tag ai">LLMs & Multimodal AI</span>
+            <span class="tag ai">Google Gemini API</span>
+            <span class="tag ai">Prompt Engineering</span>
+            <span class="tag ai">AI Agents & Workflows</span>
+            <span class="tag ai">RAG (Retrieval-Augmented Generation)</span>
+            <span class="tag ai">Machine Learning</span>
+            <span class="tag ai">Scikit-Learn</span>
+            <span class="tag ai">Pandas & NumPy</span>
+            <span class="tag ai">Jupyter Notebook</span>
+            <span class="tag ai">Algoritmos Genéticos</span>
+            <span class="tag ai">Busca Heurística & Minimax</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>⚙️ Backend, Dados & Otimização</h3>
+          <div class="skills">
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Java</span>
+            <span class="tag">Node.js / Express</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">C / C++</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MongoDB Atlas</span>
+            <span class="tag">SQLAlchemy 2.0</span>
+            <span class="tag">RESTful APIs & WebSockets</span>
+            <span class="tag">Otimização Combinatória & Grafos</span>
+            <span class="tag">Multithreading & Concorrência</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>☁️ Cloud, DevOps, Frontend & IoT</h3>
+          <div class="skills">
+            <span class="tag">Docker & Docker Compose</span>
+            <span class="tag">AWS (Cloud Deploy)</span>
+            <span class="tag">Grafana / Prometheus / Loki</span>
+            <span class="tag">Angular</span>
+            <span class="tag">Next.js & React Native</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">Testes Automatizados (Pytest)</span>
+            <span class="tag">Git / GitHub Actions</span>
+            <span class="tag">ESP32 & Sensores IoT</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <h2>Portfólio de Projetos</h2>
+      <p class="section-sub">Projetos práticos em IA Generativa, Aprendizado de Máquina, Otimização Logística de Entregas e Engenharia Full Stack.</p>
+
+      <div class="filters">
+        <button class="filter-btn active" onclick="filterProjects('all', this)">Todos (12)</button>
+        <button class="filter-btn" onclick="filterProjects('ai', this)">GenAI & Machine Learning</button>
+        <button class="filter-btn" onclick="filterProjects('opt', this)">Otimização & Logística de Entregas</button>
+        <button class="filter-btn" onclick="filterProjects('eng', this)">Sistemas Distribuídos, Full Stack & IoT</button>
+      </div>
+
+      <div class="grid" id="project-grid">
+        <!-- 1. GenAI Gemini -->
+        <article class="card featured" data-cat="ai">
+          <div>
+            <span class="card-badge">GenAI · LLM Multimodal</span>
+            <h3><a href="https://github.com/LucaS4nt0s/ImersaoAlura" target="_blank" rel="noopener">API Multimodal com Google Gemini AI ↗</a></h3>
+            <p>Backend RESTful integrado nativamente ao modelo <strong>Google Gemini 1.5 Flash</strong> para visão computacional generativa, análise semântica de imagens e geração automática de descrições e alt-text em português com persistência em nuvem.</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>Google Gemini AI</span><span>Prompt Engineering</span><span>Node.js</span><span>MongoDB Atlas</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. ML CKD -->
+        <article class="card featured" data-cat="ai">
+          <div>
+            <span class="card-badge">Machine Learning · Data Science</span>
+            <h3><a href="https://github.com/LucaS4nt0s" target="_blank" rel="noopener">Predição Clínica com Machine Learning (CKD AI) ↗</a></h3>
+            <p>Pipeline completo de Ciência de Dados e Aprendizado Supervisionado para diagnóstico preditivo precoce: análise exploratória, imputação de dados faltantes, normalização, balanceamento de classes e validação de modelos classificadores.</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>Python</span><span>Scikit-Learn</span><span>Pandas</span><span>Feature Engineering</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Otimização de Entregas (Delivery Dispatch) -->
+        <article class="card featured" data-cat="opt ai">
+          <div>
+            <span class="card-badge">Logística & Despacho · Heurísticas</span>
+            <h3><a href="https://github.com/LucaS4nt0s/Problema_Entregas" target="_blank" rel="noopener">Otimização de Escalonamento de Entregas ↗</a></h3>
+            <p>Modelagem e resolução do problema logístico de despacho de pedidos entre entregadores (motoqueiros) para minimização de <em>makespan</em> (tempo total de entrega), comparando algoritmos de Backtracking com poda e heurísticas gulosas.</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>Otimização Logística</span><span>Heurísticas</span><span>Backtracking</span><span>Java</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Caixeiro Viajante (Algoritmo Genético) -->
+        <article class="card featured" data-cat="opt ai">
+          <div>
+            <span class="card-badge">IA Evolucionária · Roteamento</span>
+            <h3><a href="https://github.com/LucaS4nt0s/Problema_Caixeiro_Viajante" target="_blank" rel="noopener">Roteamento (TSP) com Algoritmo Genético ↗</a></h3>
+            <p>Otimização de rotas (Problema do Caixeiro Viajante) comparando busca exata $O(N!)$ com <strong>Algoritmos Genéticos</strong> (seleção, crossover, mutação e evolução populacional) para encontrar rotas eficientes em grafos ponderados.</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>Algoritmos Genéticos</span><span>Otimização de Rotas</span><span>Grafos</span><span>Java</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Damas IA -->
+        <article class="card featured" data-cat="ai">
+          <div>
+            <span class="card-badge">Agentes Autônomos · Busca Competitiva</span>
+            <h3><a href="https://github.com/LucaS4nt0s/Damas_IA" target="_blank" rel="noopener">Agente Inteligente de Decisão (Minimax) ↗</a></h3>
+            <p>Implementação de agente autônomo para jogos de soma-zero baseado em árvore de busca de estados, algoritmo <strong>Minimax</strong> e funções de avaliação heurística multicritério para previsão de jogadas.</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>Inteligência Artificial</span><span>Minimax</span><span>Heurísticas</span><span>Java</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. GameRent Distributed Geolocation -->
+        <article class="card" data-cat="eng opt">
+          <div>
+            <span class="card-badge eng">Sistemas Distribuídos · Geolocalização</span>
+            <h3><a href="https://github.com/LucaS4nt0s/GameRent" target="_blank" rel="noopener">GameRent — Microsserviços & Busca por Proximidade ↗</a></h3>
+            <p>Arquitetura distribuída em microsserviços (catálogo e locação) com cálculo geoespacial de proximidade máxima em memória, comunicação inter-serviços, tolerância a falhas e deploy na nuvem AWS.</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>Python</span><span>Microsserviços</span><span>Geolocalização</span><span>AWS</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. SGA ABACO -->
+        <article class="card" data-cat="eng">
+          <div>
+            <span class="card-badge eng">Full Stack · FastAPI & Angular</span>
+            <h3><a href="https://github.com/LucaS4nt0s/ABACO_Sistema" target="_blank" rel="noopener">SGA ABACO — Plataforma de Gestão ↗</a></h3>
+            <p>Plataforma web full-stack em produção para gestão integrada de turmas, matrículas, notas e logística, construída com FastAPI, Angular 21, PostgreSQL 16, SQLAlchemy 2.0, autenticação JWT e 107 testes automatizados.</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>FastAPI</span><span>Angular 21</span><span>PostgreSQL</span><span>107 Testes</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. RentalSpouse -->
+        <article class="card" data-cat="eng">
+          <div>
+            <span class="card-badge eng">Marketplace · Web & Mobile</span>
+            <h3><a href="https://github.com/LucaS4nt0s/RentalSpouse" target="_blank" rel="noopener">RentalSpouse — Marketplace de Serviços ↗</a></h3>
+            <p>Plataforma monorepo conectando clientes e prestadores de serviços residenciais com backend assíncrono em FastAPI, frontend web em Next.js, aplicativo mobile em React Native e banco PostgreSQL.</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>FastAPI</span><span>Next.js</span><span>React Native</span><span>Docker</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. Varinha Mágica IoT -->
+        <article class="card" data-cat="eng ai">
+          <div>
+            <span class="card-badge eng">IoT · Reconhecimento de Gestos</span>
+            <h3><a href="https://github.com/LucaS4nt0s/Varinha_Magica" target="_blank" rel="noopener">Varinha Mágica — Reconhecimento de Movimento em Tempo Real ↗</a></h3>
+            <p>Sistema embarcado com ESP32 e sensor inercial MPU6050 que captura telemetria de acelerômetro/giroscópio e classifica movimentos da mão em tempo real via WebSockets.</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>ESP32</span><span>Sensores IMU</span><span>WebSockets</span><span>Node.js</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10. Convex Hull Trick Optimization -->
+        <article class="card" data-cat="opt">
+          <div>
+            <span class="card-badge eng">Programação Dinâmica · Otimização</span>
+            <h3><a href="https://github.com/LucaS4nt0s/ProblemaDeAlocacaoDeFazenda" target="_blank" rel="noopener">Otimização de Custos com Convex Hull Trick ↗</a></h3>
+            <p>Algoritmo de otimização matemática para redução de complexidade quadrática $O(N^2)$ para $O(N \log N)$ em grandes volumes de dados ($N \le 50.000$) utilizando poda de dominância e programação dinâmica.</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>Programação Dinâmica</span><span>Convex Hull Trick</span><span>Java</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 11. Smart Parking Multithread -->
+        <article class="card" data-cat="eng">
+          <div>
+            <span class="card-badge eng">Concorrência & Sistemas em Tempo Real</span>
+            <h3><a href="https://github.com/LucaS4nt0s/Estacionamento_Shopping" target="_blank" rel="noopener">Smart Parking — Simulador Concorrente Multithread ↗</a></h3>
+            <p>Motor de simulação de alta concorrência com controle de regiões críticas, semáforos contadores, filas prioritárias com fallback e prevenção de <em>deadlocks</em> e <em>race conditions</em>.</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>Java</span><span>Multithreading</span><span>Semáforos</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 12. Analisador Léxico & Grafos -->
+        <article class="card" data-cat="eng opt">
+          <div>
+            <span class="card-badge eng">Compiladores & Teoria dos Grafos</span>
+            <h3><a href="https://github.com/LucaS4nt0s/Grafos" target="_blank" rel="noopener">Biblioteca de Grafos & Caminhos Mínimos (Dijkstra/Prim) ↗</a></h3>
+            <p>Implementação orientada a objetos de algoritmos fundamentais de roteamento e grafos (BFS, DFS, menor caminho de Dijkstra e Árvore Geradora Mínima de Prim).</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>Dijkstra</span><span>Grafos</span><span>Estruturas de Dados</span><span>Java</span>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -133,26 +392,26 @@
         <article class="item">
           <div class="item-header">
             <div>
-              <h3>Pesquisador Bolsista em P&D (IoT & Sistemas Inteligentes)</h3>
+              <h3>Pesquisador Bolsista em P&D (IoT, Dados & Sistemas Inteligentes)</h3>
               <div class="org">Pesquisa Aplicada — IFSULDEMINAS</div>
             </div>
             <span class="period">2026 – Presente</span>
           </div>
           <p>
-            Pesquisa e desenvolvimento envolvendo integração de sensores, sistemas embarcados, aquisição de dados e arquitetura de plataformas digitais para monitoramento e análise em tempo real.
+            Pesquisa e desenvolvimento envolvendo integração de sensores, aquisição e processamento de séries temporais, modelagem analítica e arquitetura de plataformas digitais para monitoramento inteligente em tempo real.
           </p>
         </article>
 
         <article class="item">
           <div class="item-header">
             <div>
-              <h3>Desenvolvedor Full Stack</h3>
+              <h3>Desenvolvedor Full Stack & Backend</h3>
               <div class="org">EJ Turing (Empresa Júnior de Computação — IFSULDEMINAS)</div>
             </div>
             <span class="period">2025 – Presente</span>
           </div>
           <p>
-            Desenvolvimento de aplicações web e sistemas sob medida para clientes reais, desde o levantamento de requisitos e modelagem de banco de dados até a entrega e implantação.
+            Desenvolvimento ágil de aplicações web, APIs REST e sistemas sob medida para clientes reais, atuando desde a arquitetura de software e banco de dados até testes automatizados e deploy em nuvem.
           </p>
         </article>
 
@@ -165,7 +424,7 @@
             <span class="period">2024 – Presente</span>
           </div>
           <p>
-            Desenvolvimento de soluções com microcontroladores (ESP32, Arduino), confecção de placas de circuito impresso (PCB), integração de sensores/atuadores e modelagem/impressão 3D.
+            Desenvolvimento de soluções de hardware e firmware com microcontroladores (ESP32), telemetria IoT, confecção de placas de circuito impresso (PCB) e prototipagem 3D.
           </p>
         </article>
 
@@ -178,109 +437,8 @@
             <span class="period">Em andamento</span>
           </div>
           <p>
-            Foco em Arquitetura de Software, Sistemas Distribuídos, Redes de Computadores, Inteligência Artificial e Sistemas Embarcados.
+            Foco em Inteligência Artificial, Aprendizado de Máquina, Projeto e Análise de Algoritmos, Sistemas Distribuídos, Engenharia de Software e Sistemas Embarcados.
           </p>
-        </article>
-      </div>
-    </section>
-
-    <section id="projetos">
-      <h2>Portfólio de Projetos</h2>
-      <div class="grid">
-        <article class="card">
-          <div>
-            <h3><a href="https://github.com/LucaS4nt0s/ABACO_Sistema" target="_blank" rel="noopener">SGA ABACO ↗</a></h3>
-            <p>Sistema de Gestão Acadêmica full-stack para controle integrado de turmas, alunos, matrículas, presenças, notas e logística de materiais, com 107 testes automatizados.</p>
-          </div>
-          <div class="card-footer">
-            <div class="card-tags">
-              <span>Angular 21</span><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div>
-            <h3><a href="https://github.com/LucaS4nt0s/RentalSpouse" target="_blank" rel="noopener">RentalSpouse ↗</a></h3>
-            <p>Plataforma monorepo web e mobile para conexão ágil e segura entre clientes e prestadores de serviços de manutenção residencial.</p>
-          </div>
-          <div class="card-footer">
-            <div class="card-tags">
-              <span>FastAPI</span><span>Next.js</span><span>React Native</span><span>PostgreSQL</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div>
-            <h3><a href="https://github.com/LucaS4nt0s/GameRent" target="_blank" rel="noopener">GameRent (Sistemas Distribuídos) ↗</a></h3>
-            <p>Plataforma distribuída em microsserviços para aluguel de jogos com busca geoespacial por proximidade, comunicação inter-serviços e deploy na AWS.</p>
-          </div>
-          <div class="card-footer">
-            <div class="card-tags">
-              <span>Python</span><span>Microsserviços</span><span>AWS</span><span>Docker</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div>
-            <h3><a href="https://github.com/LucaS4nt0s/Varinha_Magica" target="_blank" rel="noopener">Varinha Mágica IoT ↗</a></h3>
-            <p>Hardware embarcado com ESP32 e acelerômetro/giroscópio MPU6050 capaz de traduzir movimentos da mão em tempo real para uma aplicação web interativa.</p>
-          </div>
-          <div class="card-footer">
-            <div class="card-tags">
-              <span>ESP32</span><span>MPU6050</span><span>Node.js</span><span>WebSockets</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div>
-            <h3><a href="https://github.com/LucaS4nt0s/Estacionamento_Shopping" target="_blank" rel="noopener">Smart Parking Multithread ↗</a></h3>
-            <p>Simulador concorrente em tempo real para controle de vagas com semáforos contadores, filas prioritárias, prevenção de race conditions e GUI em Java Swing.</p>
-          </div>
-          <div class="card-footer">
-            <div class="card-tags">
-              <span>Java</span><span>Multithreading</span><span>Concorrência</span><span>Swing</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div>
-            <h3><a href="https://github.com/LucaS4nt0s/Damas_IA" target="_blank" rel="noopener">Damas com IA (Minimax) ↗</a></h3>
-            <p>Jogo de Damas completo em Java utilizando árvore de busca Minimax e funções de avaliação heurística para previsão e tomada de decisão.</p>
-          </div>
-          <div class="card-footer">
-            <div class="card-tags">
-              <span>Java</span><span>Inteligência Artificial</span><span>Minimax</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div>
-            <h3><a href="https://github.com/LucaS4nt0s/LandingPage_EJTuring" target="_blank" rel="noopener">Landing Page — EJ Turing ↗</a></h3>
-            <p>Página institucional moderna e responsiva para a Empresa Júnior do IFSULDEMINAS com apresentação de portfólio, serviços e formulário integrado.</p>
-          </div>
-          <div class="card-footer">
-            <div class="card-tags">
-              <span>Tailwind CSS</span><span>HTML5</span><span>JavaScript</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div>
-            <h3><a href="https://github.com/LucaS4nt0s/CalculadoraGPON" target="_blank" rel="noopener">Calculadora GPON ↗</a></h3>
-            <p>Ferramenta para dimensionamento e cálculo de orçamento de potência em redes ópticas passivas (GPON).</p>
-          </div>
-          <div class="card-footer">
-            <div class="card-tags">
-              <span>Java</span><span>Redes Ópticas</span><span>Telecom</span>
-            </div>
-          </div>
         </article>
       </div>
     </section>
@@ -288,7 +446,7 @@
     <section id="contato">
       <h2>Contato</h2>
       <p style="color: var(--muted); margin-bottom: 1rem;">
-        Aberto a oportunidades de estágio e projetos em Engenharia de Software, Backend, Full Stack e IoT.
+        Buscando oportunidades em <strong>Inteligência Artificial / GenAI, Engenharia de Software e Backend</strong> para construir produtos inteligentes em larga escala.
       </p>
       <div class="btn-row">
         <a class="btn primary" href="mailto:lucasamuel30@gmail.com">Enviar E-mail</a>
@@ -299,8 +457,18 @@
   </main>
 
   <footer>
-    © 2026 Luca Samuel dos Santos · Hospedado no GitHub Pages
+    © 2026 Luca Samuel dos Santos · Engenharia de Computação, GenAI & Software Engineering
   </footer>
 
+  <script>
+    function filterProjects(cat, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('#project-grid .card').forEach(card => {
+        const cats = card.dataset.cat.split(' ');
+        card.style.display = (cat === 'all' || cats.includes(cat)) ? 'flex' : 'none';
+      });
+    }
+  </script>
 </body>
 </html>
